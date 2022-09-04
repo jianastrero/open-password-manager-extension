@@ -20,3 +20,23 @@ kotlin {
 dependencies {
     testImplementation(kotlin("test-js"))
 }
+
+task("copyResources") {
+    copy {
+        from("src/main/resources")
+        into("out")
+    }
+}
+
+//task("afterBundle") {
+//    dependsOn("bundle")
+//    copy {
+//        from ("build/bundle") {
+//            rename("(.*)\\\\.bundle.js", "\$1.js")
+//        }
+//        into("out")
+//    }
+//}
+
+
+tasks.findByPath("assemble")?.dependsOn("copyResources")
