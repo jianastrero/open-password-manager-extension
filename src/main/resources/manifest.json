@@ -1,0 +1,20 @@
+{
+  "name": "Open Password Manager Extension",
+  "description": "Open Source Code for a Password Manager with the ability to use chrome extensions to autofill forms",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "/images/opme16.png",
+    "32": "/images/opme32.png",
+    "48": "/images/opme48.png",
+    "128": "/images/opme128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "/images/opme16.png",
+      "32": "/images/opme32.png",
+      "48": "/images/opme48.png",
+      "128": "/images/opme128.png"
+    }
+  }
+}
